@@ -1,69 +1,33 @@
-# Sistema_banc-rio_simples
+💰 Sistema Bancário Simples
 
-menu = """
+Este é um projeto de um sistema bancário básico desenvolvido em Python, com foco em praticar lógica de programação e manipulação de dados.
 
-{d} Depositar
-{s} Sacar
-{e} Extrato
-{q} Sair
+O sistema simula operações simples de um banco, como depósitos, saques e extrato, utilizando execução via terminal.
 
-=> """
+🚀 Funcionalidades
 
-saldo = 0
-limite= 1000
-extrato = ""
-numero_saques = 0
-LIMITE_SAQUES = 2
+💵 Depósito
+- Permite adicionar valores à conta
+- Apenas valores positivos são aceitos
+  
+🏧 Saque
+- Limite de valor por saque
+- Controle de saldo disponível
+- Limite de quantidade de saques (caso implementado)
+  
+📄 Extrato
+- Exibe todas as movimentações realizadas
+- Mostra o saldo atual da conta
+  
+🧠 Objetivo do Projeto
 
-while True:
+Este projeto foi desenvolvido com fins educacionais para praticar:
 
-    opcao = input(menu)
-
-    if opcao == "d":
-        valor = float(input("Informe o valor de depósito: "))
-
-        if valor > 0:
-            saldo += valor
-            extrato += f"Depósito: R$ {valor: .2f}\n"
-
-        else:
-            print("A operação falhou! O valor informado é invalido.")
-
-    elif opcao =="s":
-        valor = float(input("Informe o valor do saque: "))
-
-        excedeu_saldo = valor > saldo
-
-        excedeu_limite = valor > limite
-
-        excedeu_saques = numero_saques >= LIMITE_SAQUES
-
-        if excedeu_saldo:
-            print("A operação falhou! Você não tem saldo o suficiente.")
-
-        elif excedeu_limite:
-            print("A operação falhou! O valor do saque excede o limite disponivel.")
-
-        elif excedeu_saques:
-            print("A operação falhou! Numero máximo de saques excedido.")
-
-        elif valor > 0:
-            saldo -= valor
-            extrato += f"Saque: R$ {valor: .2f}\n"
-            numero_saques += 1
-
-        else:
-            print("A operação falhou! O valor indformado é invalido.")     
-        
-    elif opcao == "e":
-        print("\n$$$$$$$$$$$$$$$$$$ EXTRATO $$$$$$$$$$$$$$$$$$")
-        print("Não foram realizadas movimentações." if not extrato else extrato)
-        print(f"\nSaldo: R$ {saldo: .2f}")
-        print("--------------------------------------------------")
-
-    elif opcao == "q":
-        break
-
-    else:
-        print("Operação inválida, por favor selecione novamente a operação desejada.")
-        
+- Lógica de programação
+- Estruturas condicionais (if, else)
+- Laços de repetição
+- Manipulação de variáveis
+- Organização de código em funções
+  
+🛠️ Tecnologias Utilizadas
+- Python 🐍
