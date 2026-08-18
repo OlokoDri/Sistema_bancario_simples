@@ -1,33 +1,75 @@
-💰 Sistema Bancário Simples
+# 💰 Sistema Bancário Simples
 
-Este é um projeto de um sistema bancário básico desenvolvido em Python, com foco em praticar lógica de programação e manipulação de dados.
+Sistema bancário simples desenvolvido em **Python**, criado com fins educacionais para praticar lógica de programação e conceitos fundamentais da linguagem.
 
-O sistema simula operações simples de um banco, como depósitos, saques e extrato, utilizando execução via terminal.
+O projeto simula operações básicas de uma conta bancária através do terminal, permitindo realizar depósitos, saques e consultar o extrato.
 
-🚀 Funcionalidades
+## 🚀 Funcionalidades
 
-💵 Depósito
-- Permite adicionar valores à conta
-- Apenas valores positivos são aceitos
-  
-🏧 Saque
-- Limite de valor por saque
-- Controle de saldo disponível
-- Limite de quantidade de saques (caso implementado)
-  
-📄 Extrato
-- Exibe todas as movimentações realizadas
-- Mostra o saldo atual da conta
-  
-🧠 Objetivo do Projeto
+### 💵 Depósito
 
-Este projeto foi desenvolvido com fins educacionais para praticar:
+* Permite adicionar valores ao saldo da conta.
+* Aceita apenas valores positivos.
 
-- Lógica de programação
-- Estruturas condicionais (if, else)
-- Laços de repetição
-- Manipulação de variáveis
-- Organização de código em funções
-  
-🛠️ Tecnologias Utilizadas
-- Python 🐍
+### 🏧 Saque
+
+* Permite realizar saques utilizando o saldo disponível.
+* Limite de **R$ 1.000 por saque**.
+* Limite de **2 saques por execução do programa**.
+* Impede saques superiores ao saldo disponível.
+
+### 📄 Extrato
+
+* Exibe todas as movimentações realizadas.
+* Mostra o saldo atual da conta.
+* Informa quando nenhuma movimentação foi realizada.
+
+### 📋 Menu interativo
+
+* Depósito
+* Saque
+* Extrato
+* Sair
+
+## 🧠 Conceitos praticados
+
+Durante o desenvolvimento deste projeto, foram praticados:
+
+* Lógica de programação;
+* Estruturas condicionais (`if`, `elif`, `else`);
+* Estrutura de repetição `while`;
+* Variáveis e tipos de dados;
+* Operadores de comparação;
+* Entrada e saída de dados pelo terminal;
+* Manipulação de strings;
+* Formatação de valores numéricos.
+
+## 🛠️ Tecnologia utilizada
+
+* 🐍 **Python**
+
+## ▶️ Como executar
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/OlokoDri/Sistema_banc-rio_simples.git
+```
+
+Acesse a pasta do projeto:
+
+```bash
+cd Sistema_banc-rio_simples
+```
+
+Execute o arquivo Python:
+
+```bash
+python nome_do_arquivo.py
+```
+
+> Substitua `nome_do_arquivo.py` pelo nome do arquivo principal do projeto.
+
+## 📚 Objetivo
+
+Este projeto faz parte da minha jornada de aprendizado em programação e foi desenvolvido para consolidar meus conhecimentos de **Python e lógica de programação** por meio da construção de um sistema interativo executado pelo terminal.
